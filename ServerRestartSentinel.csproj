@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ServerRestartSentinel</AssemblyName>
+    <RootNamespace>TheRealAlexV.SERestartSentinel</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="RestartSentinelPlugin.cs" />
+    <Compile Include="Config.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Space Engineers Core Assemblies -->
+    <Reference Include="Sandbox.Game">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Sandbox.Game.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <Reference Include="Sandbox.Common">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Sandbox.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <Reference Include="VRage.Game">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Game.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <Reference Include="VRage">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <Reference Include="VRage.Math">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Math.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Pulsar Plugin Framework -->
+    <Reference Include="Pulsar.Shared">
+      <HintPath>%AppData%\Pulsar\Libraries\Modern\Pulsar.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <!-- 0Harmony (if needed by Pulsar) -->
+    <Reference Include="0Harmony">
+      <HintPath>%AppData%\Pulsar\Libraries\Modern\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
