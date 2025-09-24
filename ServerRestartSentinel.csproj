@@ -10,11 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="RestartSentinelPlugin.cs" />
-    <Compile Include="Config.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <!-- Space Engineers Core Assemblies -->
     <Reference Include="Sandbox.Game">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Sandbox.Game.dll</HintPath>
