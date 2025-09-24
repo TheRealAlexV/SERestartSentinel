@@ -36,15 +36,18 @@
       <Private>False</Private>
     </Reference>
 
+    <!-- .NET Framework Reference -->
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+
     <!-- Pulsar Plugin Framework -->
     <Reference Include="Pulsar.Shared">
-      <HintPath>%AppData%\Pulsar\Libraries\Modern\Pulsar.Shared.dll</HintPath>
+      <HintPath>C:\Users\Alex\AppData\Roaming\Pulsar\Libraries\Modern\Pulsar.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
     
     <!-- 0Harmony (if needed by Pulsar) -->
     <Reference Include="0Harmony">
-      <HintPath>%AppData%\Pulsar\Libraries\Modern\0Harmony.dll</HintPath>
+      <HintPath>C:\Users\Alex\AppData\Roaming\Pulsar\Libraries\Modern\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
